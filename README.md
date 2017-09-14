@@ -28,22 +28,16 @@ Should be used only during deployment to production.
 
 ### Adding bundles to handle
 To add a bundle file to corresponding layout handle, add following instruction to the handle layout file in your module:
-```
+```xml
   <head>
     <script src="bundles/{bundleFile}.js" />
   </head>
 ```
 
 Example for cart page
-```
+```xml
 // My/Module/View/view/frontend/layout/checkout_cart_index.xml
 <?xml version="1.0"?>
-<!--
-/**
- * Copyright © Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
- */
--->
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <head>
         <script src="bundles/cart.js" />
