@@ -1,6 +1,6 @@
 # magento-rjs-config
 
-r.js build file for Magento 2 CE Luma theme.
+r.js build file for Magento 2.2.0-rc30 CE Luma theme.
 
 Magento 2 built-in bundler relies only on php environment, so it is not very efficient.
 
