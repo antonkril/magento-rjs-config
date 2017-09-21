@@ -15,7 +15,7 @@ Should be used only during deployment to production.
 * Run `magento setup:static-content:deploy` to deploy Magento 2 static content to `{magentoDir}/pub/static/` folder
 * For every theme locale:
   * Move `{magentoDir}/pub/static/{vendor}/{theme}/{locale}` folder to `{magentoDIr}pub/static/{vendor}/{theme}/{locale}_source`
-  * Run `r.js -o build.js --baseUrl={magentoDir}/pub/static/{vendor}/{theme}/{locale}_source --dir={magentoDir}/pub/static/{vendor}/{theme}/{locale}`
+  * Run `r.js -o build.js baseUrl={magentoDir}/pub/static/{vendor}/{theme}/{locale}_source dir={magentoDir}/pub/static/{vendor}/{theme}/{locale}`
 
 ## Output
 * Bundles all files common for all Magento 2 Luma storefront pages into `requirejs/require.js` file
