@@ -2,6 +2,8 @@
 
 r.js build file for Magento 2.2.0-rc30 CE Luma theme.
 
+NOTE: manual modification of build file for your project IS NOT REQUIED. Major benefit will be achieved by any blank or luma-based installation with this build configuration without modifications. Tweaking it is optional, if you want to achieve 100% improvements.
+
 Magento 2 built-in bundler relies only on php environment, so it is not very efficient.
 
 The build file from this repo can be used to execute budnling and minification on deployed static content with R.js tool. It will optimize main pages of Magento 2.
