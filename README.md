@@ -1,5 +1,7 @@
 # magento-rjs-config
 
+**NOTE** Magento is working on external bundling solution with asynchronous bundle loading. This configuration will be deprecated.
+
 r.js build file for Magento 2.2.0-rc30 CE Luma theme.
 
 **NOTE**: manual modification of build file for your project IS NOT REQUIED. Major benefit will be achieved by any blank or luma-based installation with this build configuration without modifications. Tweaking it is optional, if you want to achieve 100% improvements.
