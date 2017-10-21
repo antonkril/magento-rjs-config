@@ -24,7 +24,7 @@ Should be used only during deployment to production.
 ## Output
 * Bundles all files common for all Magento 2 Luma storefront pages into `requirejs/require.js` file
 * Generates 5 page-specific bundle files:
-  * `bundles/common.js` - should be added to `default` layout handle
+  * `bundles/default.js` - should be added to `default` layout handle
   * `bundles/cart.js` - should be added to `checkout_cart_index` layout handle
   * `bundles/checkout.js` - should be added to `checkout_index_index` layout handle
   * `bundles/catalog.js` - should be added to `catalog_category_view` and `catalog_product_view` layout handles
