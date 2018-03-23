@@ -30,8 +30,8 @@ Should be used only during deployment to production.
   * `bundles/catalog.js` - should be added to `catalog_category_view` and `catalog_product_view` layout handles
   * `bundles/product.js` - should be added to `catalog_product_view` layout handle
 
-### Adding bundles to handle
-To add a bundle file to corresponding layout handle, add following instruction to the handle layout file in your module:
+### Adding bundles to pages
+To add a bundle file to the corresponding page, add following instruction to the page layout update file in your module:
 ```xml
   <head>
     <script src="bundles/{bundleFile}.js" />
