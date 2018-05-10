@@ -1,21 +1,19 @@
 # magento-rjs-config
 
-**NOTE** Magento is working on external bundling solution with asynchronous bundle loading. This configuration will be deprecated.
+**NOTE** Magento is working on an external bundling solution with asynchronous bundle loading. This configuration will be deprecated once this solution arrives.
 
-r.js build file for Magento 2.2.0-rc30 CE Luma theme.
+This `r.js` build file is built for Magento 2.2.0-rc30 CE Luma theme.
 
-**NOTE**: manual modification of build file for your project IS NOT REQUIED. Major benefit will be achieved by any blank or luma-based installation with this build configuration without modifications. Tweaking it is optional, if you want to achieve 100% improvements.
+**NOTE**: Manual modification of the `build.js` file for your project IS NOT REQUIRED. A major benefit will be achieved by any `Magento/blank` or `Magento/luma`-based installation with this build configuration without the need for any modifications. Tweaking the `build.js` file is optional if you want to achieve 100% improvements.
 
-Magento 2 built-in bundler relies only on php environment, so it is not very efficient.
+The Magento 2 built-in bundler relies only on PHP, which is not very efficient and could lead to potential issues. The build file `build.js` from this repository can be used to execute bundling and minification on deployed static content with the `r.js` tool shipped with the NPM version of RequireJS. It will optimize the main pages of Magento 2.
 
-The build file from this repo can be used to execute budnling and minification on deployed static content with R.js tool. It will optimize main pages of Magento 2.
-
-Should be used only during deployment to production.
+The process described here should be applied only during deployment to production.
 
 ## Usage
 * Install [r.js](http://requirejs.org/docs/optimization.html)
 * Download `build.js` from this repo
-* Edit `build.js` to remove/add files from your custom theme to bundles
+* Edit `build.js` to remove/add files from your custom theme to bundles (optional)
 * Run `magento setup:static-content:deploy` to deploy Magento 2 static content to `{magentoDir}/pub/static/` folder
 * For every theme locale that you use:
   * Move `{magentoDir}/pub/static/{area}/{vendor}/{theme}/{locale}` folder to `{magentoDIr}pub/static/{area}/{vendor}/{theme}/{locale}_source`
@@ -38,9 +36,8 @@ To add a bundle file to the corresponding page, add following instruction to the
   </head>
 ```
 
-Example for cart page
+Example for cart pages, create a file `My/Module/view/frontend/layout/checkout_cart_index.xml` with the following contents:
 ```xml
-// My/Module/view/frontend/layout/checkout_cart_index.xml
 <?xml version="1.0"?>
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <head>
