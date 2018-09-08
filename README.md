@@ -1,6 +1,8 @@
 # magento-rjs-config
 
-**NOTE** Magento is working on an external bundling solution with asynchronous bundle loading. This configuration will be deprecated once this solution arrives.
+**NOTE** This config is deprecated. See https://devdocs.magento.com/guides/v2.3/performance-best-practices/advanced-js-bundling.html
+
+
 
 This `r.js` build file is built for Magento 2.2.0-rc30 CE Luma theme.
 
