@@ -1,6 +1,6 @@
 {
     // Enable js minification with Uglify. Uncomment this out during development tomake builds faster
-    optimize: 'none',
+    //optimize: 'none',
     inlineText: true,
     // Files that are required for all pages will be included in require.js file
     deps: [
