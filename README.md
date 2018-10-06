@@ -16,7 +16,7 @@ The process described here should be applied only during deployment to productio
 * Install [r.js](http://requirejs.org/docs/optimization.html)
 * Download `build.js` from this repo
 * Edit `build.js` to remove/add files from your custom theme to bundles (optional)
-* Apply [the jquery.cookie issue patch](#Fixing-missconfiguration-of-jquery.cookie)
+* Apply [the jquery.cookie issue patch](#fixing-missconfiguration-of-jquerycookie)
 * Run `magento setup:static-content:deploy` to deploy Magento 2 static content to `{magentoDir}/pub/static/` folder
 * For every theme locale that you use:
   * Move `{magentoDir}/pub/static/{area}/{vendor}/{theme}/{locale}` folder to `{magentoDIr}pub/static/{area}/{vendor}/{theme}/{locale}_source`
