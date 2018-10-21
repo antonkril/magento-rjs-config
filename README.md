@@ -1,8 +1,8 @@
 # magento-rjs-config
 
-**NOTE** This config is deprecated. See https://devdocs.magento.com/guides/v2.3/performance-best-practices/advanced-js-bundling.html
+**NOTE** This config is deprecated. See https://devdocs.magento.com/guides/v2.3/performance-best-practices/advanced-js-bundling.htm
 
-
+**NOTE** Configuration generation tool that automates build.js creation was created by Shane Osbourne: https://github.com/WeareJH/config-gen
 
 This `r.js` build file is built for Magento 2.2.0-rc30 CE Luma theme.
 
